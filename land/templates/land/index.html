@@ -85,12 +85,91 @@
             >read</a
           >
         </div>
-      </div>
-      
-      
-      
+      </div>  
     </div>
   </div>
+
+  <!-- setup for follow, join and support  -->
+  <div class="container-fluid m-0 p-1">
+    <div class="row d-flex justify-content-center m-0 p-2">
+      <div class="card bg-primary col-md-3 shadow-lg text-center">
+        <div class="card-header">
+          <a href="#" class="text-decoration-none text-light fw-bold">Follow Us</a>
+        </div>
+      </div>
+      <div class="card bg-warning col-md-3 shadow-lg text-center">
+        <div class="card-header">
+          <a href="#" class="fw-bold text-decoration-none text-success">Join Us</a>
+        </div>
+      </div>
+      <div class="card bg-success col-md-3 shadow-lg text-center">
+        <div class="card-header">
+          <a class="fw-bold text-decoration-none text-light" href="#">Support Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- here:  vision and mission of the website using modals  -->
+  <div class="container-fluid m-0 p-1">
+    <div class="row d-flex justify-content-center m-0 p-2">
+      <button type="button" class="fw-bold col-5 btn btn-outline-danger border-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Vision
+      </button>
+      <button type="button" class="fw-bold col-5 btn btn-outline-danger border-3 m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Mission
+      </button>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-info strong fw-bold" id="exampleModalLabel">Vision &amp; Mission</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          Our <span class="strong text-success fw-bold">vision</span> is to build and connect a gigantic 
+          network of peers as an ocean and we are only a few drops.
+        </div>
+        <div>
+          Our <span class="strong text-success fw-bold">mission</span> is to emerge as a leading 
+          nonprofit community that helps peers to update and upgrade themselves.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- comments goes here that is a simple form  -->
+<div class="container px-md-5">
+  <h4 class="container fw-bold text-center text-info">
+    *** Notify Us ***
+  </h4>
+  <form action="" class="container px-md-5">
+    <div class="mb-3 px-md-5">
+      <label for="exampleFormControlInput1" class="form-label text-success">Email address: </label>
+      <input type="email" class="form-control fw-bold text-warning" id="exampleFormControlInput1" placeholder="emailaddress@domain.com">
+    </div>
+    <div class="mb-3 px-md-5">
+      <label for="exampleFormControlTextarea1" class="form-label text-success">Report: </label>
+      <textarea class="form-control fw-bold text-warning" id="exampleFormControlTextarea1" rows="3" placeholder="write the message you want to inform us..."></textarea>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success btn-sm fw-bold">Submit</button>
+    </div>
+  </form>
+</div>
+
 
 
   
