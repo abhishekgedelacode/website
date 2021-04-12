@@ -31,8 +31,8 @@
       <!-- second one -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-light fs-1 fw-bold p-0">
-            <img src="{% static 'land/logo.jpg' %}" alt="logo" width="40" height="40" class="  rounded-circle d-inline-block align-text-center ">
+          <a class="navbar-brand text-light fs-3 fw-bold p-0">
+            <img src="{% static 'land/logo.jpg' %}" alt="logo" width="35" height="35" class="  rounded-circle d-inline-block align-text-center ">
             AbhiCode
           <a/>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,16 +41,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-info fw-bold" href="{% url 'land:index' %}">Home</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#">About</a>
+                <a class="nav-link active text-info fw-bold" href="{% url 'land:about' %}">About</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#">Services</a>
+                <a class="nav-link active text-info fw-bold" href="{% url 'land:services' %}">Services</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#">Contacts</a>
+                <a class="nav-link active text-info fw-bold" href="{% url 'land:contacts' %}">Contacts</a>
               </li>
               
             </ul>
