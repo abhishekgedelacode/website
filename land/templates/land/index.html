@@ -1,0 +1,97 @@
+
+{% extends 'land/base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container-fluid bg-dark text-warning text-center p-0 m-0">
+    <h1 class="fw-bold text-capitalize m-0 p-0 ">think first code next</h1>
+  </div>
+
+  <!-- this is cover photo for the page  -->
+  <div class="container-fluitd m-0 p-0">
+      
+    <img src="{% static 'land/coverpic.png' %}"  class="img-fluid m-0 p-0 " alt="">
+  </div>
+
+  <!-- cards of the videos , blogs and notes  -->
+  <div class="container-fluid m-0 p-1">
+    <h1 class="container fw-bold text-center text-warning">
+      *** We Provide ***
+    </h1>
+    <div class="row d-flex justify-content-around m-0 p-2">
+      <!-- this is video section topic -->
+      <div
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+      >
+        <div class="card-header border border-3 border-success">
+          <h4 class="card-title fw-bold text-success">
+            videos
+          </h4>
+        </div>
+        <div class="card-body border border-3 border-success">
+          <p class="card-text fw-bold text-success">
+            watch video tutorials 
+          </p>
+        </div>
+        <div class="card-footer border border-success border-3">
+          <a
+            href="./gitpage.html"
+            class="btn btn-outline-success btn-sm fw-bold"
+            >watch</a
+          >
+        </div>
+      </div>
+      <!-- this is second topic -->
+      <!-- this is bolg section topic -->
+      <div
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+      >
+        <div class="card-header border border-3 border-danger">
+          <h4 class="card-title fw-bold text-danger">
+            blogs
+          </h4>
+        </div>
+        <div class="card-body border border-3 border-danger">
+          <p class="card-text fw-bold text-danger">
+            enjoy reading blogs 
+          </p>
+        </div>
+        <div class="card-footer border border-danger border-3">
+          <a
+            href="./gitpage.html"
+            class="btn btn-outline-danger btn-sm fw-bold"
+            >explore</a
+          >
+        </div>
+      </div>
+      <!-- this is notes topic -->
+      <div
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+      >
+        <div class="card-header border border-3 border-info">
+          <h4 class="card-title fw-bold text-info">
+            notes
+          </h4>
+        </div>
+        <div class="card-body border border-3 border-info">
+          <p class="card-text fw-bold text-info">
+            material and soft copies 
+          </p>
+        </div>
+        <div class="card-footer border border-info border-3">
+          <a
+            href="./gitpage.html"
+            class="btn btn-outline-info btn-sm fw-bold"
+            >read</a
+          >
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+
+
+  
+{% endblock %}

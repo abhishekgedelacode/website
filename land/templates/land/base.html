@@ -44,13 +44,13 @@
                 <a class="nav-link active text-info fw-bold" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#">Features</a>
+                <a class="nav-link active text-info fw-bold" href="#">About</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#">Pricing</a>
+                <a class="nav-link active text-info fw-bold" href="#">Services</a>
               </li>
               <li class="nav-item w-100 text-center">
-                <a class="nav-link active text-info fw-bold" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link active text-info fw-bold" href="#">Contacts</a>
               </li>
               
             </ul>
@@ -64,51 +64,29 @@
     </header>
 
     <!-- think first code next  -->
-    <div class="container-fluid bg-dark text-warning text-center p-0 m-0">
-      <h1 class="fw-bold text-capitalize m-0 p-0 ">think first code next</h1>
-    </div>
 
-    <!-- this is cover photo for the page  -->
-    <div class="container-fluitd m-0 p-0">
-      <img src="{% static 'land/coverpic.png' %}"  class="img-fluid m-0 p-0 " alt="">
-    </div>
+    {% block content %}
+    {% endblock %}
 
-    <!-- cards of the videos , blogs and notes  -->
-    <div class="container fluid m-0 p-2 bg-dark">
-      <div class="row dflex justify-content-around m-0 p-0">
-        <div class="col-md-3 m-2 card text-white bg-danger ">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
-        <div class="col-md-3 m-2 card text-white bg-danger ">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
-        <div class="col-md-3 m-2 card text-white bg-danger ">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
-        <div class="col-md-3 m-2 card text-white bg-danger ">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Danger card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
+    <!-- the footer of the web page  -->
+    
+    <footer class="container-fluid p-1 m-0 bg-dark text-center">
+      <div class="container p-0 text-center text-secondary fw-bold">
+        copyrights &copy;
+        <script>
+          const d = new Date();
+          document.write(d.getFullYear());
+        </script>
       </div>
-    </div>
+      <div class="container p-0 text-center text-secondary fw-bold">
+        All Rights Reserved
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3 text-center fw-bold text-warning">AbhiShekGedelaCode</div>
+        <div class="col-md-3 text-center fw-bold text-warning">gabhishekji123@gmail.com</div>
+        <div class="col-md-3 text-center fw-bold text-warning">ABHISHEK GEDELA</div>
+      </div>
+    </footer>
     
 
       <!-- end of my code  -->
