@@ -7,6 +7,10 @@ def index(request):
     return render(request, 'land/index.html')
 
 
+def posts(request):
+    return render(request, 'land/posts.html')
+
+
 def about(request):
     return render(request, 'land/about.html')
 
