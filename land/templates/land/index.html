@@ -3,25 +3,25 @@
 {% block content %}
 {% load static %}
 
-  <div class="container-fluid bg-dark text-warning text-center p-0 m-0">
+  <div class="container-fluid text-warning text-center p-0 m-0">
     <h5 class="fw-bold text-capitalize m-0 p-0 ">think first code next</h5>
   </div>
 
   <!-- this is cover photo for the page  -->
-  <div class="container-fluitd m-0 p-0">
+  <div class="container-fluid  m-0 p-0">
       
     <img src="{% static 'land/coverpic.png' %}"  class="img-fluid m-0 p-0 " alt="">
   </div>
 
   <!-- cards of the videos , blogs and notes  -->
-  <div class="container-fluid m-0 p-1">
+  <div class="container-fluid  m-0 p-1">
     <h1 class="container fw-bold text-center text-warning">
       *** We Provide ***
     </h1>
     <div class="row d-flex justify-content-around m-0 p-2">
       <!-- this is video section topic -->
       <div
-        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 bg-dark text-capitalize text-center"
       >
         <div class="card-header border border-3 border-success">
           <h4 class="card-title fw-bold text-success">
@@ -44,7 +44,7 @@
       <!-- this is second topic -->
       <!-- this is bolg section topic -->
       <div
-        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 bg-dark text-capitalize text-center"
       >
         <div class="card-header border border-3 border-danger">
           <h4 class="card-title fw-bold text-danger">
@@ -66,7 +66,7 @@
       </div>
       <!-- this is notes topic -->
       <div
-        class="col-md-3 shadow-lg card border-0 p-0 m-2 text-capitalize text-center"
+        class="col-md-3 shadow-lg card border-0 p-0 m-2 bg-dark text-capitalize text-center"
       >
         <div class="card-header border border-3 border-info">
           <h4 class="card-title fw-bold text-info">
@@ -90,7 +90,7 @@
   </div>
 
   <!-- setup for follow, join and support  -->
-  <div class="container-fluid m-0 p-1">
+  <div class="container-fluid  m-0 p-1">
     <div class="row d-flex justify-content-center m-0 p-2">
       <div class="card bg-primary col-md-3 shadow-lg text-center">
         <div class="card-header">
@@ -125,14 +125,14 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog border border-light">
+    <div class="modal-content ">
       <div class="modal-header">
-        <h5 class="modal-title text-info strong fw-bold" id="exampleModalLabel">Vision &amp; Mission</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title text-info strong fw-bold  text-info" id="exampleModalLabel">Vision &amp; Mission</h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-light">
         <div>
           Our <span class="strong text-success fw-bold">vision</span> is to build and connect a gigantic 
           network of peers as an ocean and we are only a few drops.
@@ -151,18 +151,18 @@
 </div>
 
 <!-- comments goes here that is a simple form  -->
-<div class="container px-md-5">
-  <h4 class="container fw-bold text-center text-info">
+<div class="container px-md-5 ">
+  <h4 class="container fw-bold text-center text-info bg-dark">
     *** Notify Us ***
   </h4>
   <form action="" class="container px-md-5">
     <div class="mb-3 px-md-5">
       <label for="exampleFormControlInput1" class="form-label text-success">Email address: </label>
-      <input type="email" class="form-control fw-bold text-warning" id="exampleFormControlInput1" placeholder="emailaddress@domain.com">
+      <input type="email" class="form-control fw-bold text-warning bg-dark" id="exampleFormControlInput1" placeholder="emailaddress@domain.com">
     </div>
-    <div class="mb-3 px-md-5">
+    <div class="mb-3 px-md-5 bg-dark">
       <label for="exampleFormControlTextarea1" class="form-label text-success">Report: </label>
-      <textarea class="form-control fw-bold text-warning" id="exampleFormControlTextarea1" rows="3" placeholder="write the message you want to inform us..."></textarea>
+      <textarea class="form-control fw-bold text-warning bg-dark " id="exampleFormControlTextarea1" rows="3" placeholder="write the message you want to inform us..."></textarea>
     </div>
     <div class="text-center">
       <button type="submit" class="btn btn-success btn-sm fw-bold">Submit</button>

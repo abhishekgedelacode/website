@@ -25,7 +25,7 @@ SECRET_KEY = '@o))u_zvnp5r2alplt-5fap5@_+p41h&s88t^pet%ba2*sx+28'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', 'abhicode']
 
 
 # Application definition
