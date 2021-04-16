@@ -24,6 +24,10 @@ def contacts(request):
     return render(request, 'land/contacts.html')
 
 
+def info(request):
+    return render(request, 'land/info.html')
+
+
 def comments(request):
     if request.method == 'POST':
         email = request.POST.get('email')
