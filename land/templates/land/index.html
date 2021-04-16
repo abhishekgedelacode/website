@@ -172,10 +172,10 @@
 
 
 <!-- Modal -->
-<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog border border-light">
-    <div class="modal-content ">
-      <div class="modal-header">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog border border-light bg-dark">
+    <div class="modal-content bg-dark">
+      <div class="modal-header bg-dark">
         <h5 class="modal-title text-info strong fw-bold  text-info" id="exampleModalLabel">Vision &amp; Mission</h5>
         <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -189,7 +189,7 @@
           nonprofit community that helps peers to update and upgrade themselves.
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer d-flex justify-content-center">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
@@ -202,14 +202,15 @@
   <h4 class="container fw-bold text-center text-info bg-dark">
     *** Notify Us ***
   </h4>
-  <form action="" class="container px-md-5">
+  <form action="{% url 'land:comments' %}" method="POST" class="container px-md-5">
+    {% csrf_token %}
     <div class="mb-3 px-md-5">
       <label for="exampleFormControlInput1" class="form-label text-success">Email address: </label>
-      <input type="email" class="form-control fw-bold text-warning bg-dark" id="exampleFormControlInput1" placeholder="emailaddress@domain.com">
+      <input type="email" class="form-control fw-bold text-warning bg-dark" id="exampleFormControlInput1" name="email" placeholder="emailaddress@domain.com">
     </div>
     <div class="mb-3 px-md-5 bg-dark">
       <label for="exampleFormControlTextarea1" class="form-label text-success">Report: </label>
-      <textarea class="form-control fw-bold text-warning bg-dark " id="exampleFormControlTextarea1" rows="3" placeholder="write the message you want to inform us..."></textarea>
+      <textarea class="form-control fw-bold text-warning bg-dark " id="exampleFormControlTextarea1" name="report" rows="3" placeholder="write the message you want to inform us..."></textarea>
     </div>
     <div class="text-center">
       <button type="submit" class="btn btn-success btn-sm fw-bold">Submit</button>
