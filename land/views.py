@@ -37,7 +37,7 @@ def comments(request):
             cmnt = Comments(email=email, report=report)
             cmnt.save()
         else:
-            pass
+            return render(request, 'land/index.html')
 
         return HttpResponseRedirect("/")
     else:

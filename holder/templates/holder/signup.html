@@ -15,6 +15,40 @@
     <section class="container-fluid bg-dark text-warning text-center p-0 m-0">
         <h1 class="fw-bold text-capitalize m-0 p-0 ">Sign Up</h1>
     </section>
+
+    <!-- the sign up process  -->
+    <section class="container-fluid m-0 p-0 bg-dark">
+        <div class="row d-flex justify-content-center container-fluid m-0 p-2">
+            <div class="col-md-6 container-fluid m-0 p-2 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                </svg>
+            </div>
+            <div class="col-md-6 container-fluid m-0 p-0">
+                <form action="{% url 'holder:signup' %}" method="POST" class="container-fluid m-0 p-0 px-md-5">
+                    {% csrf_token %}
+                    <div class="mb-3 px-md-5">
+                      <label for="exampleInputEmail1" class="form-label text-info fw-bold">Email Address:</label>
+                      <input type="email" name="email" class="form-control bg-dark text-success fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3 px-md-5">
+                      <label for="exampleInputPassword1" class="form-label text-info fw-bold">Password: </label>
+                      <input type="password" name="pwd" class="form-control bg-dark text-success fw-bold" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mb-3 px-md-5">
+                        <label for="exampleInputPassword2" class="form-label text-info fw-bold">Confirm Password: </label>
+                        <input type="password" name="cpwd" class="form-control bg-dark text-success fw-bold" id="exampleInputPassword2">
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary fw-bold">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 

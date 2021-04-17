@@ -15,6 +15,36 @@
     <section class="container-fluid bg-dark text-warning text-center p-0 m-0">
         <h1 class="fw-bold text-capitalize m-0 p-0 ">Sign In</h1>
     </section>
+
+    <!-- sign in form for the abhicode website  -->
+    <section class="container-fluid m-0 p-0 bg-dark">
+        <div class="row d-flex justify-content-center container-fluid m-0 p-2">
+            <div class="col-md-6 container-fluid m-0 p-2 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+            </div>
+            <div class="col-md-6 container-fluid m-0 p-0">
+                <form action="{% url 'holder:signin' %}" method="POST" class="container-fluid m-0 p-0 px-md-5">
+                    {% csrf_token %}
+                    <div class="mb-3 px-md-5">
+                      <label for="exampleInputEmail1" class="form-label text-info fw-bold">Email Address:</label>
+                      <input type="email" name="email" class="form-control bg-dark text-success fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      
+                    </div>
+                    <div class="mb-3 px-md-5">
+                      <label for="exampleInputPassword1" class="form-label text-info fw-bold">Password: </label>
+                      <input type="password" name="pwd" class="form-control bg-dark text-success fw-bold" id="exampleInputPassword1">
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary fw-bold">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 
 
