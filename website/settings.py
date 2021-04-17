@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', 'abhicode']
 # Application definition
 
 INSTALLED_APPS = [
+    'holder.apps.HolderConfig',
     'land.apps.LandConfig',
     'django.contrib.admin',
     'django.contrib.auth',
