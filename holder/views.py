@@ -10,11 +10,14 @@ def signin(request):
         email = request.POST.get('email')
         pwd = request.POST.get('pwd')
 
-        a = Holder.objects.get(email=email).password
+        try:
+            a = Holder.objects.get(email=email).password
 
-        if pwd == a:
-            return HttpResponseRedirect("/")
-        else:
+            if pwd == a:
+                return HttpResponseRedirect("/")
+            else:
+                return render(request, 'holder/signin.html')
+        except:
             return render(request, 'holder/signin.html')
     else:
         return render(request, 'holder/signin.html')
